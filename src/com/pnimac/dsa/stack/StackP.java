@@ -57,7 +57,7 @@ public class StackP {
 			}
 		}
 		
-		public static void main(String args) {
+		public static void main(String[] args) {
 			StackP myStack = new StackP(5); // Creating a stack of size 5
 
 	        myStack.push(1);

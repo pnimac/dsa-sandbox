@@ -48,7 +48,7 @@ public class QueueP {
 		}
 	}
 
-	public static void main(String args) {
+	public static void main(String[] args) {
 
 		QueueP queue = new QueueP(5);
 
