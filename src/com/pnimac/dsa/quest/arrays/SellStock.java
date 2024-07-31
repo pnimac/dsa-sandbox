@@ -1,4 +1,4 @@
-package com.pnimac.dsa.arrays;
+package com.pnimac.dsa.quest.arrays;
 
 /**
  * You are given an integer array prices where prices[i] is the price of a given

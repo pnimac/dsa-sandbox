@@ -1,4 +1,4 @@
-package com.pnimac.dsa.string;
+package com.pnimac.dsa.quest.string;
 
 /*
  * Write a function that reverses a string. The input string is given as an array of characters s.

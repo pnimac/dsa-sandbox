@@ -1,4 +1,4 @@
-package com.pnimac.dsa.string;
+package com.pnimac.dsa.quest.string;
 
 public class ReverseInteger {
     public int reverse(int x) {

@@ -1,4 +1,4 @@
-package com.pnimac.dsa.arrays;
+package com.pnimac.dsa.quest.arrays;
 
 /**
  * Given an integer array nums sorted in non-decreasing order, 

@@ -1,4 +1,4 @@
-package com.pnimac.dsa.string;
+package com.pnimac.dsa.quest.string;
 
 import java.util.HashMap;
 import java.util.Map;
