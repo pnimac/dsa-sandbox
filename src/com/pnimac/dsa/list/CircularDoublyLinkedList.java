@@ -2,16 +2,6 @@ package com.pnimac.dsa.list;
 
 public class CircularDoublyLinkedList<T> {
 
-	private class Node<T> {
-		T data;
-		Node<T> next;
-		Node<T> previous;
-
-		private Node(T data) {
-			this.data = data;
-		}
-	}
-
 	Node<T> head;
 
 	public void add(T data) {
@@ -81,28 +71,36 @@ public class CircularDoublyLinkedList<T> {
 
 	}
 
-	public class Main {
-		public static void main(String[] args) {
-			CircularDoublyLinkedList<Integer> list = new CircularDoublyLinkedList<Integer>();
+	public static void main(String[] args) {
+		CircularDoublyLinkedList<Integer> list = new CircularDoublyLinkedList<Integer>();
 
-			// Adding elements
-			list.add(1);
-			list.add(2);
-			list.add(3);
-			list.add(4);
+		// Adding elements
+		list.add(1);
+		list.add(2);
+		list.add(3);
+		list.add(4);
 
-			// Printing the list
-			System.out.print("Circular Doubly Linked List: ");
-			list.print(); // Output: Circular Doubly Linked List: 1 2 3 4
+		// Printing the list
+		System.out.print("Circular Doubly Linked List: ");
+		list.print(); // Output: Circular Doubly Linked List: 1 2 3 4
 
-			// Removing an element
-			list.remove(3);
-			System.out.print("After removing 3: ");
-			list.print(); // Output: After removing 3: 1 2 4
+		// Removing an element
+		list.remove(3);
+		System.out.print("After removing 3: ");
+		list.print(); // Output: After removing 3: 1 2 4
 
-			// Printing the list in reverse order
-			System.out.print("Circular Doubly Linked List in Reverse: ");
-			list.printReverse(); // Output: Circular Doubly Linked List in Reverse: 4 2 1
+		// Printing the list in reverse order
+		System.out.print("Circular Doubly Linked List in Reverse: ");
+		list.printReverse(); // Output: Circular Doubly Linked List in Reverse: 4 2 1
+	}
+
+	private static class Node<T> {
+		T data;
+		Node<T> next;
+		Node<T> previous;
+
+		private Node(T data) {
+			this.data = data;
 		}
 	}
 
