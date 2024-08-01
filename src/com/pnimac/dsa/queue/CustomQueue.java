@@ -1,6 +1,6 @@
 package com.pnimac.dsa.queue;
 
-public class QueueP {
+public class CustomQueue {
 
 	private int[] elements;
 
@@ -9,11 +9,11 @@ public class QueueP {
 	private int frontPtr;
 	private int endPtr;
 
-	public QueueP() {
+	public CustomQueue() {
 
 	}
 
-	public QueueP(int maxSize) {
+	public CustomQueue(int maxSize) {
 		this.maxSize = maxSize;
 		this.elements = new int[maxSize];
 		this.frontPtr = -1;
@@ -50,7 +50,7 @@ public class QueueP {
 
 	public static void main(String[] args) {
 
-		QueueP queue = new QueueP(5);
+		CustomQueue queue = new CustomQueue(5);
 
 		queue.enqueue(10);
 		queue.enqueue(20);
