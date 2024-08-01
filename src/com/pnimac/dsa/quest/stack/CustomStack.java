@@ -1,16 +1,16 @@
-package com.pnimac.dsa.stack;
+package com.pnimac.dsa.quest.stack;
 
-public class StackP {
+public class CustomStack {
 
 		private int topPtr;
 		private int[] elements;
 		private int maxSize;
 		
-		public StackP() {
+		public CustomStack() {
 			
 		}
 		
-		public StackP(int size) {
+		public CustomStack(int size) {
 			this.maxSize = size;
 			topPtr = -1;
 			elements = new int[maxSize];
@@ -58,7 +58,7 @@ public class StackP {
 		}
 		
 		public static void main(String[] args) {
-			StackP myStack = new StackP(5); // Creating a stack of size 5
+			CustomStack myStack = new CustomStack(5); // Creating a stack of size 5
 
 	        myStack.push(1);
 	        myStack.push(2);
