@@ -2,7 +2,7 @@ package com.pnimac.dsa.map;
 
 import java.util.*;
 
-public class HashMapP<K, V> {
+public class CustomHashMap<K, V> {
 
 	private Node<K, V>[] bucket;
 	private int INITIAL_DEFAULT_CAPACITY = 16;
@@ -11,7 +11,7 @@ public class HashMapP<K, V> {
 									// bucket.length, which is fixed after initialization, size changes dynamically
 									// as elements are added or removed.
 
-	public HashMapP() {
+	public CustomHashMap() {
 		this.bucket = new Node[INITIAL_DEFAULT_CAPACITY];
 	}
 
@@ -146,7 +146,7 @@ public class HashMapP<K, V> {
 
 	public static void main(String[] args) {
 		// Create an instance of HashMapP
-		HashMapP<String, Integer> map = new HashMapP<>();
+		CustomHashMap<String, Integer> map = new CustomHashMap<>();
 
 		// Test the put method
 		System.out.println("Adding key-value pairs:");
